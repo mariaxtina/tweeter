@@ -5,5 +5,10 @@ $(document).ready(function() {
     var val = $(this).val().length;
     var newVal = 140 - val;
     $(".counter").html(newVal);
+    if (newVal < 0) {
+      $(".counter").css({ 'color': 'red'});
+    } else {
+      $(".counter").css({ 'color': 'black'});
+    }
   });
 });
