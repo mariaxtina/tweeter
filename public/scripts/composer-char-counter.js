@@ -1,14 +1,13 @@
 $(document).ready(function() {
   console.log("composer.js ready");
 
-  $('.new-tweet textarea').on( "keyup", function() {
-    var val = $(this).val().length;
-    var newVal = 140 - val;
-    $(".counter").html(newVal);
-    if (newVal < 0) {
-      $(".counter").css({ 'color': 'red'});
+  $('.new-tweet textarea').on("keyup", function() {
+    var charsRemaining = 140 - $(this).val().length;
+    $(".counter").html(charsRemaining);
+    if (charsRemaining < 0) {
+      $(".counter").addClass("overLimit");
     } else {
-      $(".counter").css({ 'color': 'black'});
+      $(".counter").removeClass("overLimit");
     }
   });
 });
