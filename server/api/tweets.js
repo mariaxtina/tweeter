@@ -1,5 +1,3 @@
-"use strict";
-
 const User    = require("../lib/user-helper")
 const express = require('express');
 const tweets  = express.Router();

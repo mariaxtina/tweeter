@@ -1,5 +1,3 @@
-"use strict";
-
 require('dotenv').config();
 const db     = require('../lib/db'),
       tweets = require("./tweets");
