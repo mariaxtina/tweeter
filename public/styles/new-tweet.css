@@ -3,8 +3,10 @@
  }
 
  .new-tweet {
-  border-radius: 25px;
+  border-radius: 8px;
   margin: 2em;
+  padding: 1em;
+  background-color: #ededed;
 
  }
 

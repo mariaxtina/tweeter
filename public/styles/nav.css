@@ -6,6 +6,7 @@
   background-color: #00a087;
   color: #e8fdff;
   top: 0;
+  z-index: 5;
 }
 
 #nav-bar .logo {
