@@ -27,7 +27,7 @@ function createTweetElement(tweet) {
 
 $(document).ready(function() {
 
-  getAndRenderAllTweets();
+  // getAndRenderAllTweets();
 
     $("form").on( "submit", function(event) {
       event.preventDefault();
@@ -54,6 +54,7 @@ $(document).ready(function() {
         url: '/tweets/',
         method: 'GET',
         success: function (data) {
+          $(".tweet").remove();
           renderTweets(data);
         }
       });
