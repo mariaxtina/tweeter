@@ -1,5 +1,3 @@
-"use strict";
-
 const Chance      = require("chance"),
       chance      = new Chance();
 

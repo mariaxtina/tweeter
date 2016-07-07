@@ -1,13 +1,11 @@
 $(document).ready(function() {
-  console.log("composer.js ready");
-
   $('.new-tweet textarea').on("keyup", function() {
     var charsRemaining = 140 - $(this).val().length;
     $(".counter").html(charsRemaining);
     if (charsRemaining < 0) {
-      $(".counter").addClass("overLimit");
+      $(".counter").addClass("over-limit");
     } else {
-      $(".counter").removeClass("overLimit");
+      $(".counter").removeClass("over-limit");
     }
   });
 });

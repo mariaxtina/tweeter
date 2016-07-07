@@ -1,30 +1,29 @@
-.new-tweet h2 {
-  border-bottom:  1px solid black ;
- }
-
- .new-tweet {
+.new-tweet {
   border-radius: 8px;
   margin: 2em;
   padding: 1em;
   background-color: #ededed;
+}
 
- }
+.new-tweet h2 {
+  border-bottom: 1px solid black;
+}
 
- .new-tweet form {
+.new-tweet form {
   position: relative;
- }
+}
 
- .new-tweet textarea {
+.new-tweet textarea {
   padding: 5px;
   width: 100%;
- }
+}
 
- .new-tweet .counter {
+.new-tweet .counter {
   position: absolute;
   right: 0;
   bottom: 0;
- }
+}
 
- .new-tweet .overLimit {
+.new-tweet .over-limit {
   color: red;
- }
+}
