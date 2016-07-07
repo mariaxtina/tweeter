@@ -20,3 +20,7 @@
   line-height: 80px;
   vertical-align: top;
 }
+
+#nav-bar .submitButton {
+  float: right;
+}

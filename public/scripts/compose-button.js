@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  $('.submitbotton').on("click", function() {
-    $('textarea').toggle();
+  $(".submitButton").on("click", function() {
+    $(".new-tweet").toggle("slow");
   });
 });
