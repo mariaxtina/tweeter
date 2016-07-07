@@ -51,11 +51,11 @@
   padding-left: 10px;
 }
 
-.tweet footer .actions {
+.tweet footer .button {
   float: right;
-  display: none;
+  opacity: .7;
 }
 
-.tweet:hover footer .actions {
-  display: block;
+.tweet:hover footer .button {
+  opacity: 1;
 }

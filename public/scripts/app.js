@@ -32,6 +32,19 @@ $(document).ready(function() {
     $("form").on( "submit", function(event) {
       event.preventDefault();
       var newTweet = ($(this).serialize());
+
+      if ($('textarea').val() == "" || null) {
+        alert("Please enter text!");
+        return false;
+      } else if ($('textarea').val().length > 140) {
+          alert("Too long!");
+          return false;
+      }
+
+      let inputText = $("form").find("input[type=text], textarea").val("");
+
+      console.log(inputText);
+
       $.ajax({
           url: '/tweets/',
           method: 'POST',
