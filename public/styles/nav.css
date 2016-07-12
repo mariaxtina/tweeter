@@ -1,6 +1,6 @@
 #nav-bar {
   position: fixed;
-  height: 80px;
+  height: 100px;
   padding: 0 2em;
   width: 100%;
   background-color: #00a087;
@@ -13,6 +13,7 @@
   width: 80px;
   height: 80px;
   padding-right: 10px;
+  padding-top: 15px;
 }
 
 #nav-bar .header {
@@ -23,4 +24,9 @@
 
 #nav-bar .submitButton {
   float: right;
+  padding-top: 15px;
+}
+
+#nav-bar .submitButton:hover {
+  cursor: pointer;
 }
